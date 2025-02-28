@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="assignment1\outputPrime.cs" />
     <Compile Include="assignment1\Program.cs" />
+    <Compile Include="assignment2\shape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
