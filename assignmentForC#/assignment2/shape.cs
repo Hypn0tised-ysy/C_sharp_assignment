@@ -98,11 +98,12 @@ namespace assignment
             }
             return sum;
         }
-        static void Main(string[] args)
-        {
-            Shape[] shapes = generateRandomShapes(10);
-            double sum = calculateAreaSum(shapes);
-            Console.WriteLine($"the area sum of 10 generated random shapes is {sum}");
-        }
+        /* static void Main(string[] args)
+         {
+             Shape[] shapes = generateRandomShapes(10);
+             double sum = calculateAreaSum(shapes);
+             Console.WriteLine($"the area sum of 10 generated random shapes is {sum}");
+         }
+         */
     }
 }
