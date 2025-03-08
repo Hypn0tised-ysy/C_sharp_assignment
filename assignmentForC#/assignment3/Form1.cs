@@ -42,13 +42,10 @@ namespace C_sharp_assignment
         }
         private void Clock_Tick(object sender, int remainingSeconds)
         {
-            // 因为 Timer 事件可能在 UI 线程上触发，直接更新控件即可
             label1.Text = $"倒计时：{remainingSeconds}秒";
-            // 更新 ProgressBar，已过时间 = 最大秒数 - 剩余秒数
             progressBar1.Value = progressBar1.Maximum - remainingSeconds;
         }
 
-        // 处理 Clock 的 Alarm 事件（倒计时结束时触发）
         private void Clock_Alarm(object sender, EventArgs e)
         {
             label1.Text = "闹钟响了！";
@@ -59,14 +56,12 @@ namespace C_sharp_assignment
             countDownValue--;
             label1.Text = "Tick: " + countDownValue;
 
-            // 更新进度条：已经过去的时间 = (最大秒数 - 剩余秒数)
             int usedTime = progressBar1.Maximum - countDownValue;
             if (usedTime >= 0 && usedTime <= progressBar1.Maximum)
             {
                 progressBar1.Value = usedTime;
             }
 
-            // 如果倒计时到 0，响铃
             if (countDownValue <= 0)
             {
                 timer1.Stop();
@@ -93,10 +88,9 @@ namespace C_sharp_assignment
 
         public event EventHandler Alarm;
 
-        private Timer timer;          // 使用 WinForms Timer 模拟计时
+        private Timer timer;         
         private int remainingSeconds; 
 
-        // 构造函数：传入倒计时总秒数
         public Clock(int seconds)
         {
             remainingSeconds = seconds;
