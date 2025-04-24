@@ -66,6 +66,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="assignment6\Program.cs" />
+    <Compile Include="assignment7\Form1.cs" />
+    <Compile Include="assignment7\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assignment7\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +79,7 @@
     <None Include="assignment4\说明.md" />
     <None Include="assignment5\说明.md" />
     <None Include="assignment6\说明.md" />
+    <None Include="assignment7\说明.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assignment1\image.png" />
@@ -86,6 +92,7 @@
     <Content Include="assignment6\image2.png" />
     <Content Include="assignment6\image3.png" />
     <Content Include="assignment6\网址无效.png" />
+    <Content Include="assignment7\QQ2025410-21272.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
